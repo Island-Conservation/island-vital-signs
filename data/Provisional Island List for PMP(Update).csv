@@ -1,0 +1,95 @@
+Analysis Priority,Analysis complete,GID2,Island (English),Island (Native),Archipelago,Country,Size (sq km),Island status,Year cleared by,Invasives,Type,Data funding,NASA island status,Inform Restoration Planning,Monitor Habitat Restoration Progress,Direct Rewilding Efforts,Direct Habitation Restoration Efforts,End-user Partners,Possible Contact,Honzak et al data,AOI Version Introduced,TCC Data,Spectral Data,Analysis resolution,Productivity Metric,Ecoregion,Forest area (ha),Forest carbon (tC),Restoration,Island Community,Baseline monitoring,Reference island,Impact Point,Connector,Wildlife Data in House?
+1,Y,20167,Macquarie,,,Australia,129.56,Cleared,2014,"Rabbit (removed), cat (removed), rodent (removed)",Case study,NASA,1 - Included in NASA study,N,Y,,,,justine.shaw@qut.edu.au,,AOI_V1,landsat_v1.2,landsat_v2.2,315,ndvi,,,,,,,,,,Not ic
+1,Y,34281,Santa Rosa,,Channel Islands,United States,215.3,Cleared,2015,cattle (removed),Case study,NASA,1 - Included in NASA study,N,Y,N,?,"NPS, The Nature Conservancy",,Y,AOI_V1,landsat_v1.2,landsat_v2.2,291,msavi2,,1000,6200,Reforestation,,Yes,,,,Not ic
+1,Y,132195,Santa Cruz,,Channel Islands,United States,250,Cleared,2007,all invasive mammals removed,Case study,NASA,1 - Included in NASA study,N,Y,N,Y,"NPS, The Nature Conservancy",,Y,AOI_V1,landsat_v2.1,landsat_v2.2,306,msavi2,,18000,120000,Passive reforestation,,Yes,Santa Rosa,,,Not ic
+1,Y,354623,Palmyra,,Line Islands,United States,11.9,Cleared,2019,rats (removed),Case study,NASA,1 - Included in NASA study,N,Y,Y,Y,"The Nature Conservancy, USFWS, Island Conservation",,N,AOI_V1,landsat_v2.1,landsat_v2.2,30,evi,,,,"Reforestation, Rewilding",,Yes,Tetiaroa,,,"Pre and post seabird data but not very powerful -- not a lot of sites, acoustic & point counts, landcrab data, no reptiles"
+1,Y,356524,Pinzon,,Galapagos Islands,Ecuador,18,Cleared,2012,rats (removed),Case study,NASA,1 - Included in NASA study,N,Y,N,?,"Jocotoco, Charles Darwin Foundation, Galapagos National Park, Island Conservation",,Y,AOI_V1,landsat_v1.2,landsat_v2.2,100,msavi2,,280,3900,Rewilding,,Yes,"Santa Cruz, Galapagos",,,"Reptile transects pre and post, seabirds pre and post, no landcrabs"
+2,Y,349897,Ulong,,,Palau,0.557,Cleared,2023,rats,IOCC,Salesforce,1 - Included in NASA study,N,Y,N,N,"Island Conservation, Koror State Government: Department of Conservation and Law Enforcement",,Y,AOI_V1,landsat_v1.2,landsat_v2.2,30,evi,,50,3200,,,Yes,Ngeruktabel - control island for Oceankind (Ngeremdiu - could also include as past project site?),,,"Pre erad data data for seabirds, no reptiles, landrab data, slightly longer timeline"
+2,Y,353596,Anatahan,,,Northern Mariana Islands,,Cleared,2010,"Goats (removed), Pigs (removed)",Case study,NASA,1 - Included in NASA study,N,Y,,,,brad eichelberger bradley@bae-ecospatial.com,,AOI_2024-11-18,landsat_v1.2,landsat_v2.2,112,,,,,,,,,,,Not ic
+2,Y,354384,Tofua,,,Tonga,53.34,Invaded,,,IKI / IC Climate Site / Rewilding,,1 - Included in NASA study,Y,,,,Island Conservation,,Y,AOI_2025-03-10,landsat_v1.2,,143,,,,,,,,,,,
+2,Y,354388,Late,,,Tonga,17.299,Invaded,,rats,IOCC / IC Climate Site,Salesforce/NASA,1 - Included in NASA study,N,Y,Y,N,"Government of Tonga, Island Conservation, Tonga Ministry of Meteorology, Energy, Information, Disaster Management, Environment, Climate Change and Communications (MEIDECC), New Zealand Department of Conservation, Secretariat of the Pacific Regional Environment Programme",,Y,AOI_V1,landsat_v1.2,landsat_v2.2,85,,,1700,104000,Rewilding,,Yes,Tofua,,,"Pre erad data for seabirds, landcrab data (raw), no reptiles"
+2,Y,355589,Alofi,,,Wallis and Futuna,17.415,Invaded,,,IKI / IC Climate Site,,1 - Included in NASA study,Y,,,,Island Conservation,,Y,AOI_2025-03-10,landsat_v1.2,,112,evi,,1700,94200,,,,,,,
+2,Y,355617,Nu'uetele,,,Samoa,1.081,Invaded,,,RIR / IC Climate Site,,1 - Included in NASA study,Y,,,,Island Conservation,,Y,AOI_2025-03-10,landsat_v1.2,,30,evi,,,,,,,,,,
+2,Y,356491,Espanola,,Galapagos Islands,Ecuador,60.039,Partial,1978,,Control,,1 - Included in NASA study,N,,,,"Galapagos Conservancy, GNP, CDF",,,AOI_2025-03-10,,,167,,,,,,,,,,,
+2,Y,356491,Floreana,,Galapagos Islands,Ecuador,172.334,Partial,2009,"rats, cats, mice",IOCC,Salesforce/NASA,1 - Included in NASA study,N,Y,Y,Y,"Jocotoco, Charles Darwin Foundation, Galapagos National Park, Island Conservation, Durrell Conservation Trust",,Y,AOI_V1,landsat_v1.2,landsat_v2.2,250,,,6500,97824,Rewilding,Yes,Yes,Espanola,,,"Pre erad data for seabirds, no landcrabs, still needs cleaning, marine iguana imagery with partners (raw)"
+2,Y,395516,Lehua,,Hawaiian Islands,United States,1.11,Cleared,2021,Lagomorph (removed); Rats (removed),Case study,NASA,1 - Included in NASA study,N,Y,,,,,Y,AOI_V1,landsat_v1.2,landsat_v2.2,30,,,,,,,,,,,"Don't have great data, doing social attraction, might be partner datasets"
+2,Y,425054,Desecheo ,,Puerto Rico,United States,1.479,Cleared,2016,"Rats (removed), Goats (removed)",Case study,NASA,1 - Included in NASA study,N,Y,,,"USFWS, Island Conservation",,,AOI_2024-11-18,landsat_v1.2,landsat_v2.2,30,msavi2,,,3400,,,,,,,"CW need to look, reptile and landbirds and seabirds pre, not sure about post, Seabird post data plans in 2026"
+2,Y,464025,Alto Velo,,,Dominican Republic,1,Invaded,,"goats, cats, rats",IOCC / Climate Study,Salesforce,1 - Included in NASA study,Y,N,N,N,"American Bird Conservancy, Government of Dominican Republic, Island Conservation",,Y,AOI_V1,landsat_v1.2,landsat_v2.2,30,,,20,700,,,,,,,pre stage might get 2025 data
+2,FLAGGED,,Mango,,,Tonga,,,,,RIR / IC Climate Site,,1 - Included in NASA study,Y,,,,Island Conservation,,,AOI_2025-03-10,,,,,,,,,,,,,,
+3,Y,26739,Kawau,,,New Zealand,21.589,Invaded,,"possum, wallaby",Potential climate site (top 25%),,1 - Included in NASA study,Y,,,,"Island Conservation, Auckland Council, NZ DOC, PF2050",,Y,AOI_2025-03-10,landsat_v1.2,,124,evi,,2000,135000,,,,,,,
+3,Y,34693,Anacapa,,Channel Islands,United States,2.902,Cleared,2002,rats (removed),,,1 - Included in NASA study,,Y,,Y,"NPS, Island Conservation",,,AOI_2025-03-10,,,30,,,,,,,,,,,Some good wildlife data -- acoustics?
+3,Y,34745,Santa Barbara,,Channel Islands,United States,2.59,Partial,1981,"Rabbit (removed), cat (removed), sheep (removed), rats",,,1 - Included in NASA study,,Y,,Y,NPS,,,AOI_2025-03-10,,,30,,,,,,,,,,,
+3,Y,100878,Hawadax,,Aleutian Islands,United States,27.224,Cleared,2008,rats (removed),Case study,NASA,1 - Included in NASA study,N,Y,,,"USFWS, Island Conservation",,,AOI_2024-11-18,landsat_v1.2,landsat_v2.2,123,,,,,,,,,,,"Seabird pre and post, no reptiles, no land crabs"
+3,Y,345357,Sonsorol,,,Palau,1.31,Invaded,,rats,IOCC,Salesforce,1 - Included in NASA study,Y,Y,,,"Island Conservation, Sonsorol State Government",,,AOI_2025-03-10,,,30,evi,,,,,Yes,Yes,,,,
+3,Y,345358,Merir,,,Palau,0.857,Invaded,,rats,IOCC,Salesforce,1 - Included in NASA study,Y,Y,,,"Island Conservation, Sonsorol State Government",,,AOI_2025-03-10,,,30,,,,,,,,,,,
+3,Y,345359,Fanna,,,Palau,0.495,Invaded,,rats,IOCC,Salesforce,1 - Included in NASA study,Y,Y,,,"Island Conservation, Sonsorol State Government",,,AOI_2025-03-10,,,30,,,,,,,,,,,
+3,Y,350051,Ngeruktabel,,,Palau,18.335,Cleared,2023,rats (removed),Control,,1 - Included in NASA study,N,,,,Island Conservation,,,AOI_2025-03-10,,,84,,,,,,,,,,,
+3,Y,355597,Apolima,,,Samoa,1.002,Invaded,,,IKI / IC Climate Site,,1 - Included in NASA study,Y,,,,Island Conservation,,Y,AOI_2025-03-10,landsat_v1.2,,30,,,90,5600,,,,,,,
+3,Y,356435,Cocos,,,Costa Rica,23.398,Cleared,2025,"Deer (2023), pigs (2024), rats & cats (2025)",Potential climate site (top 25%),,1 - Included in NASA study,N,Y,?,?,Jocotoco,,,AOI_2025-03-10,,,111,,,,,,,,,,,
+3,Y,356518,Pinta,,Galapagos Islands,Ecuador,60.065,Cleared,2003,Ungulates (removed),,,1 - Included in NASA study,,,Y,,"Galapagos Conservancy, GNP",,,AOI_2025-03-10,,,139,,,,,,,,,,,
+3,Y,358309,Moho Tani,,,Marquesas,12.543,Invaded,,"goats, rats",Potential climate site (top 25%),,1 - Included in NASA study,Y,,,,Island Conservation,,,AOI_2025-03-10,,,112,,,1300,26000,,,,,,,
+3,Y,359217,Tetiaroa,,,French Polynesia,5.055,Invaded/Cleared,,rats (removed different years between motu),IOCC,Salesforce,1 - Included in NASA study,,,,,"Island Conservation, Tetiaroa Society, Office Francaise de la Biodiversite",,Y,AOI_2025-03-10,,,30,,,,,,,Yes,,,,
+3,Y,360702,Robinson Crusoe,,Juan Fernández Islands,Chile,47.449,Partial,1988,"Ungulate (removed), coati, rabbit, cat, rat",Potential climate site (top 25%),,1 - Included in NASA study,N,,,,"Island Conservation, CONAF",,,AOI_2025-03-10,,,144,,,,,,,,,,,
+3,Y,395514,Kaho'olawe,,Hawaiian Islands,United States,115.039,Partial,1992,"ungulate (removed), rats, cats",IC Climate Site,,1 - Included in NASA study,Y,,,,Island Conservation,,Y,AOI_2025-03-10,landsat_v1.2,,226,,,,,,,,,,,
+3,Y,420469,Savana,,Virgin Islands,United States,0.747,Invaded,,Rats,IOCC / Rewilding,Salesforce,1 - Included in NASA study,,,Y,Y,"USVI, Island Conservation",,Y,AOI_2025-03-10,,,30,,,,,Rewilding,,,,,,
+3,Y,457861,Amsterdam,,,French Southern Territories,57.842,Partial,2010,"cows (removed), mice, cats",Case study,NASA,1 - Included in NASA study,N,Y,N,?,"TAAF, Island Conservation",,Y,AOI_V1,landsat_v1.2,landsat_v2.2,159,,,3900,30600,Reforestation,,Yes,,,,Not ic
+4,Y,15372,Tromelin,,,French Southern Territories,0.882,,,Rats (removed),Case study,NASA,1 - Included in NASA study,N,Y,,,TAAF,,,AOI_V1,landsat_v1.2,landsat_v2.2,30,,,,,,,,,,,Not ic
+4,Y,19632,Grande Terre,,Aldabra,Seychelles,114.1,,,"Ungulate (removed), rats",Case study,NASA,1 - Included in NASA study,N,Y,,,,Gerard Rocamora <Gerard.Rocamora@unisey.ac.sc>,,AOI_V1,landsat_v1.2,landsat_v2.2,195,evi,,,,,,,,,,Not ic
+4,FLAGGED,19651,North,,,Seychelles,1.951,,,"pigs (removed), cats (removed), rats (removed)",Case study,NASA,1 - Included in NASA study,N,Y,,,,,,,landsat_v1.2,landsat_v2.2,,,,,,,,,,,,Not ic
+4,Y,19654,D'Arros,,,Seychelles,1.638,,,rodents (removed),Case study,NASA,1 - Included in NASA study,N,Y,,,,,,AOI_2024-11-18,landsat_v1.2,landsat_v2.2,30,,,160,5100,,,,,,,Not ic
+4,Y,19656,Denis,,,Seychelles,1.276,,,rodents (removed),Case study,NASA,1 - Included in NASA study,N,Y,,,,,,AOI_2024-11-18,landsat_v1.2,landsat_v2.2,30,,,120,4000,,,,,,,Not ic
+4,Y,21142,Lord Howe,,,Australia,15.985,,,"pigs (removed), goats (removed), cats (removed), mice (removed)",Case study,NASA,1 - Included in NASA study,N,Y,,,,,,AOI_2024-11-18,landsat_v1.2,landsat_v2.2,123,,,,,,,,,,,Partners might have data
+4,Y,26228,Guadalupe,,,Mexico,244,,,goats (removed),Case study,NASA,1 - Included in NASA study,N,Y,,,Grupo de Ecología y Conservación de Islas,,Y,AOI_V1,landsat_v1.2,landsat_v2.2,465,,,80,322,Reforestation,,Yes,,,,Not ic
+4,Y,26740,Great Mercury,Ahuahu,Mercury Islands,New Zealand,19.98,,,"Cats, rats (removed in 2015)",Case study,NASA,1 - Included in NASA study,N,Y,,,Corson Conservation,pete@qualcon.nz,,AOI_2024-11-18,landsat_v1.2,landsat_v2.2,122,,,,,,,,,,,Not ic
+4,Y,100925,Otouto-jima,,Ogasawara Islands,Japan,5.196,,,"Ungulate  (removed); cats  (removed); pigs  (removed); bull frogs (removed), Rats",Case study,NASA,1 - Included in NASA study,N,Y,,,,,,AOI_V1,landsat_v1.2,landsat_v2.2,61,,,,,,,,,,,Not ic
+4,Y,325668,Dirk Hartog,,,Australia,626.739,,,"goats (removed), cats (removed)",Case study,NASA,1 - Included in NASA study,N,Y,,,WA DBCA,Keith Morris <keith.morris@dbca.wa.gov.au>,,AOI_2024-11-18,landsat_v1.2,landsat_v2.2,PENDING,,,,,,,,,,,Not ic
+4,FLAGGED,332342,Middle,Atiu,Mercury Islands,New Zealand,0.183,,,Rats (removed),Case study,NASA,1 - Included in NASA study,N,Y,,,,,,AOI_V1,landsat_v1.2,landsat_v2.2,,,,,,,,,,,,Not ic
+4,Y,338891,Le Predour,,,New Caledonia,7.93,,,Ungulate (removed),Case study,NASA,1 - Included in NASA study,N,Y,,,,,,AOI_V1,landsat_v1.2,landsat_v2.2,57,,,,,,,,,,,Not ic
+4,Y,386017,Redonda,,,Lesser Antilles (Antigua and Barbuda Islands),0.632,,,"Rattus (removed), Ungulate (removed)",Case study,NASA,1 - Included in NASA study,N,Y,,,Flora and Fauna,,Y,AOI_V1,landsat_v1.2,landsat_v2.2,30,,,,,,,,,,,Not ic
+4,Y,391673,Trindade,,,Brazil,8.213,,,goats (removed),Case study,NASA,1 - Included in NASA study,N,Y,,,,,,AOI_2024-11-18,landsat_v1.2,landsat_v2.2,57,,,,,,,,,,,Not ic
+4,Y,394131,Socorro,,,Mexico,130.005,,,"sheep (removed), cats",Case study,NASA,1 - Included in NASA study,N,Y,,,Grupo de Ecología y Conservación de Islas,,Y,AOI_V1,landsat_v1.2,landsat_v2.2,228,,,10300,374000,"Reforestation, Rewilding",,Yes,,,,Not ic
+4,Y,410593,Dog,,,Anguilla,1.953,,,rats (removed),Case study,NASA,1 - Included in NASA study,N,Y,,,,,,AOI_2024-11-18,landsat_v1.2,landsat_v2.2,30,,,,,,,,,,,Not ic
+4,Y,415567,Mona,,Puerto Rico,United States,55.8,Invaded,,"goats, pigs, cats, rats",IC Climate,,1 - Included in NASA study,Y,?,?,?,"Island Conservation, PR DNRE",,Y,AOI_V1,landsat_v1.2,landsat_v2.2,141,msavi2,,5000,276000,,,,,,,"pre stage, some reptile work there with partners, no seabirds, landcrabs unk"
+,,,Baltra,,,Ecuador,25,,,,,,2 - High potential,,,,,,,,,,,,,,,,,,,,,,
+,,,Chatham,R?kohu,Chatham Islands,New Zealand,900,,,,,,2 - High potential,,,,,,,,,,,,,,,,,,,,,,
+,,,Clarion,,,Mexico,18,,,,,,2 - High potential,,,,,,,,,,,,,,,,,,,,,,
+,,,Culebrita,,Puerto Rico,United States,,,,,,,2 - High potential,,,,,,,,,,,,,,,,,,,,,,
+,,,Luis Pena,,Puerto Rico,United States,,,,,,,2 - High potential,,,,,,,,,,,,,,,,,,,,,,
+,,,Montecristo,,,Italy,10,,,,,,2 - High potential,,,,,,,,,,,,,,,,,,,,,,
+,,,Rapa Nui,,,Chile,163,,,,,,2 - High potential,,,,,,,,,,,,,,,,,,,,,,
+,,,Santa Catalina,,,United States,190,,,,,,2 - High potential,,,,,,,,,,,,,,,,,,,,,,
+,,,Santiago,,,Ecuador,590,,,,,,2 - High potential,,,,,,,,,,,,,,,,,,,,,,
+,,353600,Sarigan,,,Northern Mariana Islands,,,,"Goats, Pigs",,,3 - Potential,,,,,,,,,,,,,,,,,,,,,,
+,,,Auckland,Mauka Huka,Auckland Islands,New Zealand,600,,,,,,3 - Potential,,,,,,,,,,,,,,,,,,,,,,
+,,,Bikar Atoll,,,Republic of Marshall Islands,1,,,rats,land-sea monitoring?,,3 - Potential,,,,,"RMI Ministry of Natural Resources and Commerce, Island Conservation, Secretariat of the Pacific Regional Environment Programme",,,,,,,,,,,,,,,,,
+,,,Bokak,,,Republic of Marshall Islands,,,,,land-sea monitoring?,,3 - Potential,,,,,"RMI Ministry of Natural Resources and Commerce, Island Conservation, Secretariat of the Pacific Regional Environment Programme",,,,,,,,,,,,,,,,,
+,,,Catalina,,,Dominican Republic,9.6,,,"raccoons, rabbits, rats, cats",vegetation?,,3 - Potential,,,,,"American Bird Conservancy, Government of Dominican Republic, Island Conservation",,Y,,,,,,,,,,,,,,,
+,,,Chanaral,,,Chile,,,,,,,3 - Potential,,,,,,,,,,,,,,,,,,,,,,
+,,,Choros,,,Chile,,,,,,,3 - Potential,,,,,,,,,,,,,,,,,,,,,,
+,,,East Caicos,,,Turks & Caicos,83,,,"Goats, Cats, Donkeys",,,3 - Potential,,,,,,,,,,,,,,2300,,,,,,,,
+,,,Fregate,,,Seychelles,,,,,,,3 - Potential,,,,,,,,,,,,,,,,,,,,,,
+,,,Great Tobago,,,British Virgin Islands,,,,"Goats, Rats",,,3 - Potential,,,,,,,,,,,,,,,,,,,,,,
+,,,Greater Goat,,,Jamaica,,,,"cats, goats, mongoose ",,,3 - Potential,,,,,,,,,,,,,,,,,,,,,,
+,,,Guafo,,,Chile,200,,,"rats, cats",,,3 - Potential,,,,,,,,,,,,,,,,,,,,,,
+,,,Henderson,,,Pitcairn,,,,,,,3 - Potential,,,,,,,,,,,,,,4300,263000,,,,,,,
+,,,Jemo,,,Republic of Marshall Islands,1,,,rats,land-sea monitoring?,,3 - Potential,,,,,"RMI Ministry of Natural Resources and Commerce, Island Conservation, Secretariat of the Pacific Regional Environment Programme",,,,,,,,,,,,,,,,,
+,,,Kamaka,,,French Polynesia,,,,,land-sea monitoring?,,3 - Potential,,,,,SOP Manu,,,,,,,,,,,,,,,,,
+,,,Little Goat,,,Jamaica,,,,"cats, goats, mongoose ",,,3 - Potential,,,,,,,,,,,,,,,,,,,,,,
+,,,Little Tobago,,,British Virgin Islands,,,,"Goats, Rats",,,3 - Potential,,,,,,,,,,,,,,,,,,,,,,
+,,,Marion,,,South Africa,290,,,,land-sea monitoring?,,3 - Potential,,,,,Birdlife SA/ Mouse Free Marion,,,,,,,,,,,,,,,,,
+,,,Midway,,,United States,,,,,land-sea monitoring?,,3 - Potential,,,,,USFWS,,,,,,,,,,,,,,,,,
+,,,Mocha,,,Chile,0.85,,,,,,3 - Potential,,,,,,,,,,,,,,,,,,,,,,
+,,,Ngemelis,,,Palau,,,,,RIR / IC Climate Site,,3 - Potential,,,,,,,,,,,,,,,,,,,,,,
+,,,Rathlin,,,Ireland,14,,,"stoats, rats",IOCC,Salesforce,3 - Potential,,,,,Roysal Society for Protection of Birds,,,,,,,,,,,,Yes,,,,,
+,,,San Ambrosio,,,Chile,,,,,,,3 - Potential,,,,,,,,,,,,,,,,,,,,,,
+,,,San Cristobal,,Galapagos Islands,Ecuador,550,,,,,,3 - Potential,,,,,,,,,,,,,,,,,,,,,,
+,,,San Felix,,Desventuradas Islands,Chile,,,,,,,3 - Potential,,,,,,,,,,,,,,,,,,,,,,
+,,,Stewart,Rakiura,,New Zealand,1750,,,,,,3 - Potential,,,,,,,,,,,,,,,,,,,,,,
+,,,Tintamarre ,,,St. Martin,0.8,,,"rats, goats, green iguanas",land-sea monitoring?,,3 - Potential,,,,,"Reserve Naturelle Nationale de Saint-Martin, Fauna & Flora, Anguilla National Trust",,,,,,,,,,,,,,,,,
+,,,Korapuki,,Mercury Islands,New Zealand,0.271,Cleared,,Rats (removed in 1987) Rabbits (removed in 1988),Case study,NASA,4 - Disqualified,,,,,,,,,landsat_v1.2,landsat_v2.2,,,,,,,,,,,,
+,,,Ngerkekelau,,,Palau,,,,,land-sea monitoring?,,4 - Disqualified,,,,,Ebill Society,,,,,,,,,,,,,,,,,
+,,,Motihue,,,New Zealand,1.8,Cleared,,"Rats, mice, cats",,,3 - Potential,N,Y,Y,Y,,,,,,,,,,,,,,,,,,
+,,,Tiritiri Matangi,,,New Zealand,2.2,Cleared,,"Rats, cats",,,3 - Potential,N,Y,Y,Y,,,,,,,,,,,,,,,,,,
+,,,Rangitoto,,,New Zealand,23,Cleared,,"Possums, wallabies, rats, stoats, cats, mice",,,3 - Potential,N,Y,Y,N,,,,,,,,,,,,,,,,,,
+,,,Motutapu,,,New Zealand,15,Cleared,,"Possums, wallabies, rats, stoats, cats, mice",,,3 - Potential,N,Y,Y,Y,,,,,,,,,,,,,,,,,,
+,,,Rotoroa,,,New Zealand,2.8,Cleared,2011,"Rats, mice, stoats, cats",,,3 - Potential,N,Y,Y,Y,,,,,,,,,,,,,,,,,,
