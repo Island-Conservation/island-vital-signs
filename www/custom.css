@@ -1,0 +1,210 @@
+/* Define your color palette as CSS variables */
+:root {
+  --deep-blue: #00223D;
+  --surf-blue: #ADCAEA;
+  --coral: #F19B79;
+  --sand: #FED098;
+  --palm: #DFE565;
+  --light-neutral: #F4F4F4;
+  --dark-neutral: #423f43;
+}
+
+/* Change the logo hover color */
+.skin-blue .main-header .logo:hover {
+  background-color: var(--palm); 
+  color: var(--deep-blue);
+}
+
+/* Sidebar toggle button (hamburger menu) hover fix */
+.skin-blue .main-header .sidebar-toggle:hover {
+  background-color: var(--palm) !important; 
+  color: var(--deep-blue) !important; 
+  border-color: var(--palm) !important;
+}
+
+/* Header (navbar) */
+.skin-blue .main-header .navbar {
+  background-color: var(--deep-blue);
+}
+
+/* Logo */
+.skin-blue .main-header .logo {
+  background-color: var(--deep-blue);
+}
+
+/* Sidebar */
+.skin-blue .main-sidebar {
+  background-color: var(--surf-blue);
+  color: var(--deep-blue);
+}
+
+/* Sidebar links */
+.skin-blue .main-sidebar .sidebar a {
+  color: var(--deep-blue);
+}
+
+/* Sidebar links on hover */
+.skin-blue .main-sidebar .sidebar a:hover {
+  background-color: var(--deep-blue);
+  color: var(--light-neutral);
+}
+
+/* Active sidebar item */
+.skin-blue .main-sidebar .sidebar .active a {
+  background-color: var(--deep-blue);
+  color: var(--light-neutral);
+}
+
+/* Dashboard body background */
+.content-wrapper,
+.right-side {
+  background-color: var(--light-neutral);
+}
+
+/* Dark theme for wellPanel */
+.well {
+  background-color: var(--surf-blue);       /* Dark background */
+  color: var(--deep-blue);              /* Light text */
+  border: 2px solid var(--surf-blue);           /* Accent border */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Dark theme for wellPanel */
+.light-well {
+  background-color: var(--light-neutral);       /* Dark background */
+  color: var(--deep-blue);              /* Light text */
+  border: 2px solid var(--light-neutral);           /* Accent border */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Slider container text (min/max labels, value labels) */
+.well .irs {
+  color: var(--light-neutral);
+}
+
+/* Slider track (background line) */
+.well .irs-line {
+  background: var(--light-neutral);
+  border: 1px solid var(--deep-blue);
+}
+
+/* Slider selected range (highlighted part of the track) */
+.well .irs-bar {
+  background: var(--deep-blue);
+  border-top: 1px solid var(--deep-blue);
+  border-bottom: 1px solid var(--deep-blue);
+}
+
+/* Slider handle (draggable knob) */
+.well .irs-handle {
+  background: var(--light-neutral);
+  border: 2px solid var(--deep-blue);
+  box-shadow: none;
+}
+
+/* Slider value label above handle */
+.well .irs-single,
+.well .irs-from,
+.well .irs-to {
+  background: var(--light-neutral);
+  color: var(--deep-blue);
+  border: none;
+}
+
+/* Slider grid (tick marks and labels) */
+.well .irs-grid-text {
+  color: var(--dark-neutral);
+}
+
+.well .irs-grid-pol {
+  background: var(--dark-neutral);
+}
+
+/* Slider labels */
+.control-label {
+  font-weight: bold;
+  color: var(--dark-neutral);
+}
+
+/* Help button styling */
+.help-btn {
+  border-radius: 50% !important;
+  background-color: var(--light-neutral) !important;
+  color: var(--dark-neutral) !important;
+  border: none !important;
+  height: 30px !important;
+  width: 30px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: none !important;
+}
+
+.help-btn:focus,
+.help-btn:active,
+.help-btn:focus:active {
+  outline: 2px solid var(--coral) !important;
+  box-shadow: none !important;
+}
+
+.help-btn .fa {
+  font-size: 16px !important;
+}
+
+
+/* Style all actionLink elements */
+a.action-button {
+  font-size: 16px !important;
+  font-weight: bold !important;
+  color: var(--deep-blue) !important;
+  text-decoration: none !important;
+}
+
+a.action-button:hover {
+  text-decoration: underline !important;
+}
+
+.custom-submit {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: var(--surf-blue);
+  color: var(--deep-blue);
+  border-color: var(--surf-blue);
+}
+
+.custom-submit:hover {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: var(--palm);
+  color: var(--deep-blue);
+  border-color: var(--palm);
+}
+
+.markdown-text {
+  font-size: 16px;
+}
+
+.markdown-text h1 {
+  font-size: 28px;
+}
+
+.markdown-text h2 {
+  font-size: 24px;
+}
+
+.markdown-text h3 {
+  font-size: 22px;
+}
+
+.markdown-text h4 {
+  font-size: 20px;
+}
+
+.table {
+  border-radius: 8px !important;
+  overflow: hidden !important;
+}

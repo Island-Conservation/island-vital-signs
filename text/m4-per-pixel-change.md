@@ -1,0 +1,3 @@
+In this module you can view modeled vegetation accumulated change. Start by selecting an island, a metric of interest, a time period, and a probability level. The left side of the map will display all pixels that have been modeled for that metric. The right side of the map will display only the pixels that are significant at your desired probability level. The map will display on the right. Select a pixel on the map to see a pixel-level timeseries plot below. 
+
+[ELKE (Flush out how-to) & CHRISTY (Definitions)]
