@@ -1,4 +1,14 @@
-### **Resources**
+### **How to Cite This Tool**
+
+If Island Vital Signs informed your work, please cite it:
+
+> **Windschitl, E., M. N. Call, C. N. Wails, B. Cosentino, J. Gibbs, M. Honzak, J. Sexton, P. Wang, and D. Will.** 2026. Island Vital Signs \[Computer software\]. Zenodo. doi: [10.5281/zenodo.21500194](https://doi.org/10.5281/zenodo.21500194)
+
+That DOI always resolves to the most recent release, so it will not go stale. If you need to point at the exact release you used, add its version number to the citation and use that release's own DOI, listed under "Versions" on the [Zenodo record](https://doi.org/10.5281/zenodo.21500194).
+
+Citation is how this work stays traceable and how its continued funding is justified.
+
+### **References**
 
 **Bürkner, P.-C.** 2017. brms: An R package for Bayesian multilevel models using Stan. Journal of Statistical Software 80:1-28. doi: 10.18637/jss.v080.i01 
 

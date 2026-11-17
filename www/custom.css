@@ -9,6 +9,84 @@
   --dark-neutral: #423f43;
 }
 
+/* ============================================================
+   Brand fonts
+   ============================================================ */
+@font-face {
+  font-family: "Gotham Light";
+  src: url("fonts/Gotham-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Medium";
+  src: url("fonts/Gotham-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Recoleta Black";
+  src: url("fonts/Recoleta-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* ============================================================
+   Global type & links (Island Conservation brand)
+   ============================================================ */
+body {
+  font-family: "Gotham Light", "Helvetica Neue", Arial, sans-serif;
+  background-color: white;
+  color: var(--dark-neutral);
+}
+
+h1, h2, h3 {
+  font-family: "Recoleta Black", Georgia, serif;
+  color: var(--deep-blue);
+}
+
+h4, h5 {
+  font-family: "Gotham Medium", "Helvetica Neue", Arial, sans-serif;
+  color: var(--deep-blue);
+}
+
+a {
+  color: var(--deep-blue);
+}
+
+a:hover {
+  color: var(--coral);
+  text-decoration: underline;
+}
+
+/* Buttons */
+.btn,
+.btn-default {
+  background-color: var(--deep-blue);
+  color: white;
+  border: none;
+}
+
+.btn:hover,
+.btn-default:hover {
+  background-color: var(--surf-blue);
+  color: var(--deep-blue);
+}
+
+.btn-primary {
+  background-color: var(--coral);
+  border-color: var(--coral);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--sand);
+  border-color: var(--sand);
+  color: var(--deep-blue);
+}
+
 /* Change the logo hover color */
 .skin-blue .main-header .logo:hover {
   background-color: var(--palm); 
@@ -207,4 +285,339 @@ a.action-button:hover {
 .table {
   border-radius: 8px !important;
   overflow: hidden !important;
+}
+
+/* Per-module 'Update map' button */
+/* Coral while there are selections waiting to be applied, so it reads as the
+   next step; flat and grey once the map matches the selections. */
+.apply-btn {
+  margin-top: 6px;
+  background-color: var(--coral);
+  color: white;
+  border: none;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.apply-btn:hover:not([disabled]) {
+  background-color: var(--sand);
+  color: var(--deep-blue);
+}
+
+.apply-btn[disabled] {
+  background-color: #d7d7d7;
+  color: #6b6b6b;
+  font-weight: 400;
+  cursor: default;
+  opacity: 1;
+}
+
+/* Card around the interactive time-series plots */
+/* ggiraph renders a bare SVG with square corners, which sat oddly next to the
+   wells and tables. This gives it the same rounded white surface they use. */
+.plot-card {
+  /* the same light neutral the plots themselves use for plot.background, so
+     the card's rounded corner is what you see rather than a square grey
+     rectangle sitting inside a white one. ggiraph cannot round the SVG
+     itself: elementalist's element_rect_round silently drops the background
+     on ggiraph's device rather than rounding it. */
+  background-color: var(--light-neutral);
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+/* the SVG fills the card, and its own corners are clipped by the radius */
+.plot-card .girafe_container_std,
+.plot-card svg {
+  border-radius: 6px;
+}
+
+/* girafeOutput() reserves its declared height, but ggiraph draws the SVG at
+   its own aspect ratio, so the widget box was about twice the height of the
+   plot inside it. That was invisible against the page, but the card makes it
+   obvious, so let the box shrink to the plot it holds. */
+.plot-card .girafe.html-widget-output {
+  height: auto !important;
+}
+
+/* ============================================================
+   Inline help: definitions beside the control they explain
+   ============================================================ */
+
+/* label and its "?" on one row, so the button reads as part of the label */
+.help-label-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 5px;
+}
+
+.help-label-row .control-label {
+  margin-bottom: 0;
+}
+
+/* These buttons also carry .help-btn, so the glyph, the focus ring and the
+   hit area come from there. What changes is the setting: the module button
+   sits on the page, these sit inside a .well, which is already surf blue --
+   so matching it leaves the "?" reading as a mark beside its label rather
+   than a disc parked next to it. */
+.inline-help-btn {
+  background-color: var(--surf-blue) !important;
+  height: 20px !important;
+  width: 20px !important;
+  flex: 0 0 auto;
+  cursor: pointer;
+}
+
+/* the glyph carries the whole button now, so it barely shrinks */
+.inline-help-btn i,
+.inline-help-btn svg,
+.inline-help-btn .fa {
+  font-size: 13px !important;
+}
+
+/* with no disc to tint, hover and the open state darken the glyph instead */
+.inline-help-btn:hover,
+.inline-help-btn[aria-expanded="true"] {
+  color: var(--deep-blue) !important;
+}
+
+/* the note the "?" opens: tucked under the control, out of the way once read */
+.inline-help-note {
+  margin: -5px 0 15px 0;
+  padding: 10px 12px;
+  background-color: var(--light-neutral);
+  border-left: 3px solid var(--surf-blue);
+  border-radius: 0 6px 6px 0;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--dark-neutral);
+}
+
+.inline-help-note[hidden] {
+  display: none;
+}
+
+.inline-help-note p:last-child {
+  margin-bottom: 0;
+}
+
+/* ============================================================
+   Module intro + result caveat
+   ============================================================ */
+
+/* one line under a module title: what this tab is for */
+.module-intro {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--dark-neutral);
+  max-width: 75ch;
+  margin: -5px 0 0 0;
+}
+
+/* the caveat that has to travel with the result, not sit in the help modal */
+/* The bottom margin matches the 20px every .well above the note already
+   carries. Without it the note sat flush against the plot cards that follow
+   it, and their drop shadow spilled across its bottom edge -- the note read as
+   something that had slipped under the plots rather than a block of its own. */
+.result-note {
+  margin-top: 12px;
+  margin-bottom: 20px;
+  padding: 12px 14px;
+  background-color: var(--sand);
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--deep-blue);
+}
+
+/* ============================================================
+   Overview tab: the island catalogue
+   ============================================================ */
+
+/* how much of the catalogue the filters have left */
+.filter-count {
+  font-size: 15px;
+  color: var(--deep-blue);
+  margin: 0;
+}
+
+.filter-count strong {
+  font-size: 20px;
+}
+
+.empty-table-note {
+  font-size: 15px;
+  color: var(--dark-neutral);
+  font-style: italic;
+  margin: 0;
+}
+
+/* 75 islands is taller than anyone wants to scroll the page for, so the table
+   scrolls inside itself and the header stays put while it does */
+.overview-table-scroll {
+  max-height: 420px;
+  overflow-y: auto;
+  border-radius: 8px;
+}
+
+.overview-table-scroll thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* The Overview tab's photo, as a banner rather than a full-height image.
+   object-fit keeps it from squashing: the crop takes from the top and bottom
+   instead of distorting the water. */
+.overview-banner {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+}
+
+/* The lede paragraph above the island catalogue: the one piece of prose that
+   has to be read before anything else makes sense, so it is set a little
+   larger than body copy and given room to breathe. */
+.overview-lede {
+  font-size: 17px;
+  line-height: 1.6;
+  max-width: 95ch;
+  margin: 18px 0 20px;
+}
+
+/* Shortcut cards into the four numbered modules */
+/* Flexed so the four cards end level. Their blurbs run to two lines or three
+   depending on the module, and floated Bootstrap columns leave each card its
+   own height, which shows as a ragged bottom edge across the row. */
+.module-card-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 26px;
+}
+
+.module-card-row > div {
+  display: flex;
+}
+
+.module-card {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 104px;
+  text-align: left;
+  padding: 12px 14px;
+  background-color: var(--surf-blue);
+  border: none;
+  border-left: 5px solid var(--deep-blue);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
+}
+
+.module-card:hover,
+.module-card:focus {
+  border-left-color: var(--coral);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+  transform: translateY(-2px);
+}
+
+.module-card-title {
+  display: block;
+  font-family: "Gotham Medium", "Helvetica Neue", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  color: var(--deep-blue);
+  margin-bottom: 5px;
+}
+
+.module-card-blurb {
+  display: block;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--deep-blue);
+}
+
+/* the four cards stack on a narrow screen, so they need space between them */
+@media (max-width: 991px) {
+  .module-card {
+    min-height: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/* "Open this island in:" buttons inside the Overview map popups */
+.popup-open-row {
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid #d8d8d8;
+}
+
+.popup-open-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.popup-open-btn {
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 3px;
+  padding: 4px 8px;
+  font-size: 12px;
+  color: var(--deep-blue);
+  background-color: var(--surf-blue);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup-open-btn:hover {
+  background-color: var(--coral);
+}
+
+.result-note-label {
+  font-family: "Gotham Medium", "Helvetica Neue", Arial, sans-serif;
+  font-weight: bold;
+  margin-right: 4px;
+}
+
+/* a named doorway to the long-form help, instead of a bare "?" */
+.help-link {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  font-size: 15px !important;
+  color: var(--deep-blue) !important;
+  text-decoration: underline !important;
+  cursor: pointer;
+}
+
+.help-link:hover {
+  color: var(--coral) !important;
+}
+
+/* Overview map legend. Hand-built rather than addLegend's colour swatches,
+   because the markers are told apart by shape as well as colour and the
+   legend has to show both. */
+.overview-legend .overview-legend-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  line-height: 18px;
+}
+
+.overview-legend .overview-legend-row + .overview-legend-row {
+  margin-top: 4px;
+}
+
+.overview-legend img {
+  flex: none;
 }

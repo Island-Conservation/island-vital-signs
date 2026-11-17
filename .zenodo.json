@@ -1,0 +1,84 @@
+{
+  "upload_type": "software",
+  "title": "Island Vital Signs",
+  "description": "<p>Island Vital Signs is a decision support tool for island managers to visualize long-term trends, generate standardized reports of vegetation change, assess and monitor vegetative trends, and identify areas to prioritize for future interventions. It uses NASA Landsat data to track tree canopy cover (TCC), canopy moisture (NDMI), and productivity (NDVI, EVI, or MSAVI2) through time, modeled per pixel per year for each island in the dataset.</p><p>This record archives the application source code. The modeled raster datasets the application reads are published separately.</p><p>Supported by the Salesforce Nature Accelerator and NASA Biological Diversity and Ecological Conservation, Award 80NSSC23K1539.</p>",
+  "license": "polyform-noncommercial-1.0.0",
+  "access_right": "open",
+  "language": "eng",
+  "creators": [
+    {
+      "name": "Windschitl, Elke",
+      "affiliation": "Island Conservation",
+      "orcid": "0009-0003-5856-4044"
+    },
+    {
+      "name": "Call, Mikayla N.",
+      "affiliation": "Hobart and William Smith Colleges",
+      "orcid": "0000-0003-1465-6556"
+    },
+    {
+      "name": "Wails, Christy N.",
+      "affiliation": "South Dakota State University",
+      "orcid": "0000-0003-2084-5003"
+    },
+    {
+      "name": "Cosentino, Bradley",
+      "affiliation": "Hobart and William Smith Colleges",
+      "orcid": "0000-0002-6740-3133"
+    },
+    {
+      "name": "Gibbs, James",
+      "affiliation": "State University of New York",
+      "orcid": "0000-0002-0529-9705"
+    },
+    {
+      "name": "Honzak, Miroslav",
+      "affiliation": "terraPulse, Inc. (United States)",
+      "orcid": "0000-0001-6563-3130"
+    },
+    {
+      "name": "Sexton, Joseph",
+      "affiliation": "terraPulse, Inc.",
+      "orcid": "0000-0003-4717-9637"
+    },
+    {
+      "name": "Wang, Panshi",
+      "affiliation": "terraPulse Inc",
+      "orcid": "0000-0003-4063-1571"
+    },
+    {
+      "name": "Will, David",
+      "affiliation": "Island Conservation"
+    }
+  ],
+  "keywords": [
+    "island restoration",
+    "invasive species eradication",
+    "vegetation monitoring",
+    "remote sensing",
+    "Landsat",
+    "conservation decision support",
+    "R",
+    "Shiny"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://islandconservation.shinyapps.io/island-vital-signs/",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.1088/1748-9326/ad77b7",
+      "relation": "isDocumentedBy",
+      "resource_type": "publication-article",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.21203/rs.3.rs-10554051/v1",
+      "relation": "isDocumentedBy",
+      "resource_type": "publication-preprint",
+      "scheme": "doi"
+    }
+  ]
+}

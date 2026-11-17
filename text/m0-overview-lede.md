@@ -1,0 +1,1 @@
+Island Vital Signs is a NASA-powered decision-support tool that helps conservation teams monitor vegetation recovery and ecosystem change after restoration actions. Built on a globally consistent, scalable framework, it uses 40 years of satellite data to detect changes in tree canopy cover, vegetation health, and moisture retention across more than 50 islands world-wide.

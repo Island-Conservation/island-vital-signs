@@ -1,17 +1,34 @@
-create_leaflet_splitmap <- function(sp_left, title_left, sp_right, title_right, pal, value_range) {
+create_leaflet_splitmap <- function(sp_left, title_left, sp_right, title_right, pal, value_range,
+                                    legend_title = "Value") {
   leaflet() %>%
     addMapPane("left", zIndex = 400) %>%
     addMapPane("right", zIndex = 400) %>%
-    addProviderTiles(providers$CartoDB.DarkMatter, 
-                     group = "Dark", 
-                     layerId = "baseid1", 
+    # Three basemaps per side. The side-by-side control is handed all of them
+    # and clips whichever pair the layers control currently has on the map, so
+    # the divider keeps working when the basemap is switched. Dark is added
+    # last so it sits on top as the default.
+    addProviderTiles(providers$Esri.WorldImagery,
+                     group = "Satellite",
+                     layerId = "sat_right",
                      options = pathOptions(pane = "right")) %>%
-    addProviderTiles(providers$CartoDB.DarkMatter, 
-                     group = "Dark", 
-                     layerId = "baseid2", 
+    addProviderTiles(providers$Esri.WorldImagery,
+                     group = "Satellite",
+                     layerId = "sat_left",
                      options = pathOptions(pane = "left")) %>%
-    # addProviderTiles(providers$OpenStreetMap.Mapnik, group = "OSM") %>%
-    # addProviderTiles(providers$Esri.WorldImagery, group = "Satellite") %>%
+    add_carto_basemap(group = "Light",
+                      layerId = "light_right",
+                      options = pathOptions(pane = "right"),
+                      style = "light") %>%
+    add_carto_basemap(group = "Light",
+                      layerId = "light_left",
+                      options = pathOptions(pane = "left"),
+                      style = "light") %>%
+    add_carto_basemap(group = "Dark",
+                      layerId = "dark_right",
+                      options = pathOptions(pane = "right")) %>%
+    add_carto_basemap(group = "Dark",
+                      layerId = "dark_left",
+                      options = pathOptions(pane = "left")) %>%
     addPolygons(
       data = sp_left,
       options = leafletOptions(pane = "left"),
@@ -59,20 +76,20 @@ create_leaflet_splitmap <- function(sp_left, title_left, sp_right, title_right, 
         html = TRUE,
         opacity = 0.2)) %>%
     addLayersControl(
-      baseGroups = c("Dark"),
+      baseGroups = c("Dark", "Light", "Satellite"),
       overlayGroups = c("left", "right"),
       position = "topright"
     ) %>%
     addLegend_decreasing(
       pal = pal,
       values = value_range,
-      title = "Value",
+      title = legend_title,
       position = "bottomright",
       decreasing = TRUE
     ) %>%
-    addSidebyside(layerId = "sidecontrols",
-                  rightId = "baseid1",
-                  leftId = "baseid2") %>% 
+    add_sidebyside_multi(layerId = "sidecontrols",
+                         leftIds = c("dark_left", "light_left", "sat_left"),
+                         rightIds = c("dark_right", "light_right", "sat_right")) %>%
     addControl(
       html = sprintf("<div style='font-size:14px; color:black; padding:4px;'>%s</div>", title_left),
       position = "topleft"

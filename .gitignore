@@ -1,0 +1,32 @@
+# Data
+data/
+data.zip
+
+# Secrets. carto.env lives in the app directory so rsconnect bundles it on
+# deploy (shinyapps.io has no environment variable setting), but it must never
+# be committed. The README says what goes in it.
+carto.env
+.Renviron
+
+# R session artifacts
+.RData
+.Rhistory
+.Ruserdata
+.Rproj.user/
+
+# renv library (renv.lock is what matters, keep it)
+renv/library/
+renv/staging/
+renv/python/
+renv/sandbox/
+
+# Scratch worktree used by publish.sh to build the public release tree.
+# It is a checkout of the PUBLIC repo; never commit it into this one.
+.publish/
+
+# Misc
+package-backups/
+rsconnect/
+.DS_Store
+Thumbs.db
+.claude/settings.local.json

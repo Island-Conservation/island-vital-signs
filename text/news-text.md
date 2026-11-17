@@ -1,5 +1,21 @@
 ### **News**
 
+**Publishing Version 1.1.0**
+<br>
+Version 1.1.0 of Island Vital Signs was published on 2026-10-22. This version contains two new modules -- Trends & Conditions, Management Questions -- and it adds new islands to the dataset, bringing the total number of islands available to 75.
+
+**Publishing Version 1.0.3**
+<br>
+Version 1.0.3 of Island Vital Signs was published on 2026-07-20. This version contains new models for Ka'Ula, HI USA.
+
+**Publishing Version 1.0.2**
+<br>
+Version 1.0.2 of Island Vital Signs was published on 2026-06-10. This version contains an update to the Grande Terre, Seychelles model, and data for Bokak, RMI.
+
+**Publishing Version 1.0.1**
+<br>
+Version 1.0.1 of Island Vital Signs was published on 2026-03-10. This version contains improved user documentation, and an update to the Lehua, HI model -- modeling the removal of grazers as opposed to rats.
+
 **Exciting News! Publishing Version 1.0.0 -- Our first stable release**
 <br>
 Version 1.0.0 of Island Vital Signs was published on 2026-02-05. This version contains working features in the Per-Pixel Annual Vegetation module and the Change Maps module. It includes bug fixes from the beta version, and 7 added islands.

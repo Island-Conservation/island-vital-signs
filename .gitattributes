@@ -1,0 +1,40 @@
+# Paths that must never reach the public repo or a Zenodo release archive.
+#
+# `export-ignore` excludes a path from `git archive`, which is both how
+# publish.sh builds the public tree AND how GitHub generates the "Source
+# code (tar.gz / zip)" assets that Zenodo archives for a Release. So these
+# rules do double duty: they keep private files out of island-vital-signs,
+# and they act as a backstop inside island-vital-signs if something private
+# is ever committed there by mistake.
+#
+# This file is deliberately NOT export-ignore'd, so it travels to the public
+# repo and keeps protecting the Zenodo archive there too.
+
+# --- Development pipeline and notes: private repo only ---
+data-prep/       export-ignore
+claude-helper/   export-ignore
+CLAUDE           export-ignore
+.claude/         export-ignore
+package-backups/ export-ignore
+
+# --- Local R session / environment: must never be published ---
+# .Rprofile sources renv/activate.R. On a Posit Connect deploy that tries to
+# bootstrap renv against a project library that does not exist on the server,
+# which breaks app startup. Keep it local.
+.Rprofile        export-ignore
+.Rproj.user/     export-ignore
+*.Rproj          export-ignore
+Rplots.pdf       export-ignore
+
+# --- Data: lives in its own Zenodo deposit, not in the code repo ---
+data/            export-ignore
+data.zip         export-ignore
+
+# --- Release tooling itself ---
+publish.sh       export-ignore
+PUBLISHING.md    export-ignore
+
+# Shell scripts must keep LF endings. core.autocrlf would otherwise rewrite
+# publish.sh with CRLF on checkout, and bash then fails on the stray carriage
+# returns with "$'\r': command not found".
+*.sh             text eol=lf

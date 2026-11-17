@@ -27,8 +27,7 @@ prep_tif_for_leaflet <- function(r_stack, selected_layer, metric_selection) {
     mutate(X = round(X, 6),
            Y = round(Y, 6)) %>% 
     mutate(popup_text = paste("Latitude: ", Y, 
-                              "<br>Longitude: ", X, 
-                              "<br>Cell Id: ", round(value, 6)))
+                              "<br>Longitude: ", X))
   
   # Return the sp object
   return(sp)
@@ -63,7 +62,6 @@ prep_tif_for_leaflet <- function(r_stack, selected_layer, metric_selection) {
              Y = round(Y, 6)) %>% 
       mutate(popup_text = paste("Latitude: ", Y, 
                                 "<br>Longitude: ", X, 
-                                "<br>Cell Id: ", cell_id,
                                 "<br>", metric_selection, ": ", round(value, 6)))
     
     # Return the sp object
